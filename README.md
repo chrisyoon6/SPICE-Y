@@ -1,5 +1,22 @@
 # SPICE-Y: 2nd Place 2022 ENPH 253 Competition Robot 
 
+## Goal:
+Design and build a fully autonomous treasuring hunting robot in a span of 10 weeks
+Compettion video: https://www.youtube.com/watch?v=M51VabxarK8
+## Overview & Highlights
+- Built on the STM32F103 platform with the [stm32duino](https://github.com/stm32duino/Arduino_Core_STM32) library
+- High-data rate ADC sampling (~100 kHz) using direct memory access (DMA) to Fourier decompose infrared beacon signals
+- Custom [PCBs](https://github.com/akoen/SPICEBot/blob/main/pcbs/SPICEBot.pdf) for motor drivers, reflectance sensors, mainboard distribution
+- Mechanical design done in [Onshape](https://cad.onshape.com/documents/5972b9c60e919ab1b13b074c/w/5fe346639d96b627bb4d7038/e/e34fbf874ea22aab1deaf443)
+## Features:
+Custom-made C++ software module responsible for determining and executing robot’s every movement:
+- Self-driving using a finite-state machine and a PID algorithm, by interfacing with reflectance and infrared sensors in real-time
+- Stack data structure used to cache the robot’s movements to return robot when deviating off-course
+- Controlling the robot’s direction (linear and angular), speed, and distance by interfacing with the robot’s motors and encoders
+- High accuracy object detection by interfacing with sonar sensors and claw actuation by interfacing with servo-motors
+## Outcome:
+Placed 2nd out of 16 teams, with 100% consistency and being the 2nd fastest robot
+
 ![](img/bot.png)  
 
 ![](img/top.png)
@@ -7,9 +24,3 @@
 ![](img/bottom.png)
 
 ![](img/cad.PNG)
-
-## Overview & Highlights
-- Built on the STM32F103 platform with the [stm32duino](https://github.com/stm32duino/Arduino_Core_STM32) library
-- High-data rate ADC sampling (~100 kHz) using direct memory access (DMA) to Fourier decompose infrared beacon signals
-- Custom [PCBs](https://github.com/akoen/SPICEBot/blob/main/pcbs/SPICEBot.pdf) for motor drivers, reflectance sensors, mainboard distribution
-- Mechanical design done in [Onshape](https://cad.onshape.com/documents/5972b9c60e919ab1b13b074c/w/5fe346639d96b627bb4d7038/e/e34fbf874ea22aab1deaf443)
