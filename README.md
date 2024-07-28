@@ -2,7 +2,9 @@
 
 ## Goal:
 Design and build a fully autonomous treasuring hunting robot in a span of 10 weeks
-Compettion video: https://www.youtube.com/watch?v=M51VabxarK8
+
+**Compettion video**: https://www.youtube.com/watch?v=M51VabxarK8
+
 ## Overview & Highlights
 - Built on the STM32F103 platform with the [stm32duino](https://github.com/stm32duino/Arduino_Core_STM32) library
 - High-data rate ADC sampling (~100 kHz) using direct memory access (DMA) to Fourier decompose infrared beacon signals
