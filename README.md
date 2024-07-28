@@ -19,7 +19,7 @@ Custom-made C++ software module responsible for determining and executing robotâ
 ## Outcome:
 Placed 2nd out of 16 teams, with 100% consistency and being the 2nd fastest robot
 
-![](img/bot.png)  
+
 
 ![](img/top.png)
 
